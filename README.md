@@ -1,2 +1,2 @@
 # FinalyticaWebpageUnfinishedVersion
-Unfinished version of Finalytica web page. For showcasing purposes only.
+Unfinished version of Finalytica web page. Copy of private repo, made public. For showcasing purposes only.
