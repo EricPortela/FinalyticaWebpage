@@ -12,7 +12,7 @@ Unfinished version of Finalytica web page. Copy of repo on my other account (@fi
 
 
 # Link
-<p align="center"> <a href="finalytica.github.io" target="_blank"> finalytica.github.io </a> </p>
+<p align="center"> <a href="https://finalytica.github.io" target="_blank"> https://finalytica.github.io </a> </p>
 
 
 # Mockup
