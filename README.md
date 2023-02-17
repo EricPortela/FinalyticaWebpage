@@ -11,7 +11,7 @@
 Unfinished version of Finalytica web page. Copy of repo on my other account (@finalytica), hosted as a GitHub pages. For showcasing purposes only.
 
 
-#Link
+# Link
 <a href="finalytica.github.io"> </a>
 
 
