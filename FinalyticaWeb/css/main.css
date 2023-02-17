@@ -8,12 +8,12 @@ body {
 
 .navbar {
   background: #1C1C1E;
-  padding: 2vh;
   top: 0px;
   position: -webkit-sticky;
   position: sticky;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 10;
 }
 
 .navbar .container {
@@ -177,6 +177,8 @@ a {
   width: 100vw;
   background: white;
   border-radius: 20vw 20vw 0vw 0vw;
+  -webkit-box-shadow: 0 4px 8px 0 gray, 5px 6px 20px 5px gray;
+          box-shadow: 0 4px 8px 0 gray, 5px 6px 20px 5px gray;
 }
 
 .section_2 .section_2_1 {
@@ -245,6 +247,7 @@ a {
 .section_2 .section_2_1 .content .left_section .feature .feature_text h2 {
   text-align: right;
   font-size: 2vh;
+  color: #6F58C9;
 }
 
 .section_2 .section_2_1 .content .left_section .feature .feature_text p {
@@ -286,6 +289,7 @@ a {
 .section_2 .section_2_1 .content .right_section .feature .feature_text h2 {
   text-align: left;
   font-size: 2vh;
+  color: #6F58C9;
 }
 
 .section_2 .section_2_1 .content .right_section .feature .feature_text p {
@@ -294,12 +298,25 @@ a {
 }
 
 .section_2 .section_2_1 .content .feature_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 8vw;
   height: 8vw;
   border-color: gray;
   border-width: 2px;
   border-style: solid;
   border-radius: 15px;
+}
+
+.section_2 .section_2_1 .content .feature_icon img {
+  width: 4vw;
 }
 
 .section_2 .section_2_1 .content img {
@@ -332,8 +349,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-column-gap: 5vw;
-          column-gap: 5vw;
+  -webkit-column-gap: 4vw;
+          column-gap: 4vw;
 }
 
 .section_2 .section_2_2 .cards_holder .card_view {
@@ -352,6 +369,10 @@ a {
   width: 25vw;
   background-color: #1c1c1c;
   border-radius: 20px;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .section_2 .section_2_2 .cards_holder .card_view .img_container {
@@ -417,6 +438,13 @@ a {
 
 .section_2 .section_2_2 .cards_holder .card_view .choose_button h3 {
   color: white;
+}
+
+.section_2 .section_2_2 .cards_holder .card_view:hover {
+  -webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .section_2 .section_2_3 {

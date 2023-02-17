@@ -11,11 +11,10 @@ body {
 
 .navbar {
     background: #1C1C1E;
-    padding: 2vh;
-
     top: 0px;
     position: sticky;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 10;
     // background-color: red;
 
     //--- Container
@@ -171,6 +170,7 @@ a {
     width: 100vw;
     background: white;
     border-radius: 20vw 20vw 0vw 0vw;
+    box-shadow: 0 4px 8px 0 gray, 5px 6px 20px 5px gray;
 
 
     // --- Section 2.1
@@ -215,6 +215,7 @@ a {
                         h2 {
                             text-align: right;
                             font-size: 2vh;
+                            color: #6F58C9;
                         }
 
                         p {
@@ -247,6 +248,7 @@ a {
                         h2 {
                             text-align: left;
                             font-size: 2vh;
+                            color: #6F58C9;
                         }
 
                         p {
@@ -259,13 +261,21 @@ a {
             }
 
             .feature_icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
                 width: 8vw;
                 height: 8vw;
                 border-color: gray;
                 border-width: 2px;
                 border-style: solid;
                 border-radius: 15px;
-            }
+
+                img {
+                    width: 4vw;
+                }
+    }
 
             img {
                 width: 30%;
@@ -287,7 +297,7 @@ a {
             margin-top: 5vh;
             display: flex;
             flex-direction: row;
-            column-gap: 5vw;
+            column-gap: 4vw;
 
             .card_view {
                 display: flex;
@@ -352,6 +362,14 @@ a {
                         color: white;
                     }
                 }
+
+                transition: all 100ms ease-out;
+                transform: scale(0.9);
+            }
+
+            .card_view:hover {
+                transition: all 100ms ease-in;
+                transform: scale(1);
             }
         }        
     }
