@@ -12,7 +12,11 @@ Unfinished version of Finalytica web page. Copy of repo on my other account (@fi
 
 
 # Link
-<a href="finalytica.github.io" target="_blank"> finalytica.github.io </a>
+<p align="center"> <a href="finalytica.github.io" target="_blank"> finalytica.github.io </a> </p>
 
+
+# Mockup
+
+<a>Mockup design was made in Sketch and after implemented using HTML & SCSS</a>
 
 ![index html](https://user-images.githubusercontent.com/58792679/219814426-ffbcf49e-f037-49ad-bf82-7e876f9ce007.png)
