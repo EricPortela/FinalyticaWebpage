@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finalytica</title>
+    <link rel="icon" href="/images/finalytica_logo.svg">
     <link rel="stylesheet" href="css/main.css">
+    <script src="scripts/lottie.js"></script>
+    <script src="scripts/button_actions.js"></script>
 </head>
 <body>
+
+    <!-- LOTTIE FILES -->
+    <!-- Enable lottie files to display + be interactive (Lottie player lib + Lottie interactivity lib)  -->
+    <!-- Repo: https://github.com/LottieFiles/lottie-interactivity -->
+    <!-- Interactivity guide: https://lottiefiles.com/interactivity?url=https%3A%2F%2Fassets10.lottiefiles.com%2Fpackages%2Flf20_kdx6cani.json -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js" integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <div class="floating_menu_button" onclick="openNav()">
+
+        <lottie-player 
+            src="json_animations/menu-to-close-3.json">
+        </lottie-player>
+
+        <script>
+            const toggleMenu = document.querySelector(".floating_menu_button");
+            const player = document.querySelector("lottie-player");
+
+            var c = 0;
+            toggleMenu.addEventListener("click", function () {
+                switch(c) {
+                    case 0:
+                        player.getLottie().playSegments([30, 60], true);
+                        c = 1;
+                        break;
+                    case 1:
+                        player.getLottie().playSegments([90, 112], true);
+                        c = 0;
+                        break;
+                    default:
+                        break;
+                }
+            });
+        </script>
+        <!-- <img src="images/burger_menu.svg"> -->
+    </div>
+
+
+    <div id="mobile_menu">
+        <ul class="mobile_menu_items">
+            <!-- <li><a href="">Home</a></li> -->
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#data">Data</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a>About us</a></li>
+        </ul>
+    </div>
 
     
     <!-- Navigation Bar -->
@@ -22,8 +74,8 @@
 
             <div class="menu">
                 <ul class="menu_items">
-                    <li><a href="">Home</a></li>
-                    <li><a href="#features">Features</a></li>
+                    <!-- <li><a href="">Home</a></li> -->
+                    <li><a href="#features" onclick="">Features</a></li>
                     <li><a href="#pricing">Pricing</a></li>
                     <li><a href="#data">Data</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -48,10 +100,13 @@
                     <img class="download_img" src="images/download_app_store_icon.svg" alt="Download On The App Store">
 
                     <div class="video_link">
-                        <a href="https://www.instagram.com/p/CSpnVVyjtuW/" target="_blank">Watch video</a>
-                        <img src="images/play_button.svg" alt="Watch Video">
+
+                        <a href="https://www.instagram.com/p/CSpnVVyjtuW/" target="_blank">
+                            <lottie-player id="play-lottie" src="json_animations/play_button.json" loop autoplay>
+                            </lottie-player>
+                        </a>
+                        <!-- <img class="watch_video_img" src="images/play_button.svg" alt="Watch Video"> -->
                     </div>
-                    
                 </div>
 
             </div>
@@ -65,11 +120,19 @@
 
 
     <!-- Section 2 -->
-
     <div class="section_2">
 
         <!-- Section 2.1 -->
         <div class="section_2_1" id="features">
+
+            <div class="scroll_down">
+                <lottie-player
+                    id="scroll-lottie"
+                    src="json_animations/Comp 1.json"
+                    loop 
+                    autoplay>
+                </lottie-player>
+            </div>
 
             <h1>Financial data for listed companies on <br> <span>NYSE & NASDAQ.</span> </h1>
         
@@ -165,6 +228,8 @@
                     <div class="feature">
 
                         <div class="feature_icon">
+                            <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                            <lottie-player src="https://lottie.host/00e5b0fa-a400-4434-8ca8-92b005dce7cf/pV0YWz6k8d.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player> -->
                             <img src="images/balance_sheet_icon.svg">
                         </div>
 
@@ -220,7 +285,6 @@
                         <div class="img_container">
                             <img src="images/basic_icon.svg">
                             <h1>BASIC</h1>
-                            
                         </div>
 
                         <div class="text_content">
@@ -315,18 +379,52 @@
 
 
     <div class="section_3" id="contact">
-        <h1>Contact</h1>
+        
+        <h1>Contact Us</h1>
 
+        <div class="contact_field">
+            <div class="contact_details">
+                <div class="input_field"><input placeholder="What's your name?"></div>
+                <div class="input_field"><input type="email" placeholder="What's your email?"></div>
+            </div>
+
+            <div class="subject_field">
+                <div class="input_field"><textarea placeholder="Please write the question or description of your request..."></textarea></div>
+            </div>
+
+        </div>
+
+
+        <lottie-player 
+            id="mail-lottie" 
+            src="/json_animations/mail.json">
+        </lottie-player>
+        
+    </div>
+
+
+
+    <div class="section_4">
         <div class="icons">
-            <a href=""><img src="images/address_icon.png"></a>
+            <a href="https://github.com/finalytica/finalytica.github.io" target="_blank"><img src="images/github_icon.png"></a>
+            <a href=""><img src="images/linkedin_icon.png"></a>
             <a href="https://www.instagram.com/finalytica/" target="_blank"><img src="images/instagram_icon.png"></a>
             <a href="https://twitter.com/finalytica" target="_blank"><img src="images/twitter_icon.png"></a>
         </div>
 
+        <hr width="80%">
 
+        <p>Designed in Sketch & implemented in HTML/SASS/JavaScript by Eric Portela. <br> Animated elements are powered by Lottie Files. <br><br> </p>
 
+        <div class="logo_section">
+            <img id="finalytica_logo" src="/images/finalytica_logo_text.svg">
+        </div>
     </div>
 
 
 </body>
 </html>
+
+
+
+
