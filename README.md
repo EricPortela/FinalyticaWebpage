@@ -8,7 +8,7 @@
 </p>
 
 # About
-Unfinished version of Finalytica web page. Copy of this repo exists on my other account (@EricPortela). For showcasing purposes only.
+Unfinished version of Finalytica web page. Copy of a github.io repo hosted on my other account (@Finalytica). For showcasing purposes only.
 
 
 # Link
