@@ -13,6 +13,7 @@ Unfinished version of Finalytica web page. Copy of this repo exists on my other 
 
 # Link
 <p align="center"> <a href="https://finalytica.github.io" target="_blank"> https://finalytica.github.io </a> </p>
+<p align="center"> <a href="https://github.com/finalytica/finalytica.github.io" target="_blank"> finalytica.github.io repo </a> </p>
 
 
 # Mockup
